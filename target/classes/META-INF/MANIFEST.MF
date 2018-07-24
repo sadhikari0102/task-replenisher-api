@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: Task Replenisher
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: adhikari
+Implementation-Vendor-Id: com.walmart.replenisher
+Build-Jdk: 1.8.0_161
+Implementation-URL: http://projects.spring.io/spring-boot/task-repleni
+ sher-api/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
