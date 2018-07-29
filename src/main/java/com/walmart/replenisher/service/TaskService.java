@@ -1,5 +1,8 @@
 package com.walmart.replenisher.service;
 
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 import javax.validation.ConstraintViolationException;
@@ -18,6 +21,7 @@ import com.walmart.replenisher.exception.UserNotFoundException;
 import com.walmart.replenisher.repository.TaskRepository;
 import com.walmart.replenisher.repository.UserRepository;
 import com.walmart.replenisher.utils.ApplicationUtilities;
+import com.walmart.replenisher.utils.TaskComparator;
 
 @Service
 public class TaskService {
@@ -81,7 +85,7 @@ public class TaskService {
 		if(task.getDescription() == null)
 			task.setDescription(fromDatabase.getDescription());
 		
-		if(task.getPriority() == null)
+		if(task.getPriority() == 0)
 			task.setPriority(fromDatabase.getPriority());
 		if(task.getStatus() == null)
 			task.setStatus(fromDatabase.getStatus());
@@ -136,17 +140,19 @@ public class TaskService {
 	
 	public List<Task> getTasks(String username) {
 		User user = userRepository.findByName(username).get();
-		
+		List<Task> result = null;
 		switch (user.getRole().getRole()) {
 		
 		case "BUSINESS":
-			return taskRepository.findAll();
+			result = taskRepository.findAll();
 			
 		case "INDIVIDUAL":
-			return taskRepository.findByAssignedToId(user.getId());
+			result = taskRepository.findByAssignedToId(user.getId());
 		}
 		
-		return null;
+		Collections.sort(result, new TaskComparator());
+		
+		return result;
 	}
 	
 }

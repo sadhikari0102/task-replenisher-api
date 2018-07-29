@@ -30,7 +30,7 @@ public class Task {
 	
 	@NotNull
 	@Column(name = "PRIORITY")
-	private String priority;
+	private int priority;
 	
 	@Column(name = "START_TIME")
 	private Date startTime;
@@ -82,11 +82,11 @@ public class Task {
 		this.status = status;
 	}
 
-	public String getPriority() {
+	public int getPriority() {
 		return priority;
 	}
 
-	public void setPriority(String priority) {
+	public void setPriority(int priority) {
 		this.priority = priority;
 	}
 
