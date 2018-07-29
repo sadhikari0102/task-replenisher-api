@@ -21,6 +21,7 @@ public class User {
 	@Column(name = "PASSWORD")
 	private String password;
 	
+	@NotNull
 	@Column(name = "NAME", unique = true)
 	private String name;
 	

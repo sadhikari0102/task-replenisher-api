@@ -15,6 +15,7 @@ import com.walmart.replenisher.entity.Task;
 import com.walmart.replenisher.entity.User;
 import com.walmart.replenisher.exception.DataConstraintViolationException;
 import com.walmart.replenisher.exception.GenericDataException;
+import com.walmart.replenisher.exception.InvalidRoleException;
 import com.walmart.replenisher.exception.InvalidStatusException;
 import com.walmart.replenisher.exception.UserNotABusinessException;
 import com.walmart.replenisher.exception.UserNotFoundException;
@@ -43,13 +44,17 @@ public class TaskService {
 		if(user != null) {
 			if(!userRepository.existsByName(user.getName()))
 				throw new UserNotFoundException("Task assignee doesn't exist as a user in the system!");
-			else
+			else {
+				if(userRepository.findByName(user.getName()).get().getRole().getRole().equals("ADMIN"))
+					throw new InvalidRoleException("ADMIN cannot be assigned with a task!");
 				user = userRepository.findByName(user.getName()).get();
+			}
 		}
 		
 		if(user != null && creator.getRole().getRole().equals("INDIVIDUAL") && !user.getName().equals(username))
 			throw new UserNotABusinessException("Individuals can only assign tasks to self");
-
+		
+		task.setAssignedTo(user);
 		task.setCreatedBy(creator); 
 		
 		trackStatus(task);
@@ -76,8 +81,11 @@ public class TaskService {
 		if(assignedTo != null) {
 			if(!userRepository.existsByName(assignedTo.getName()))
 				throw new UserNotFoundException("Task assignee doesn't exist as a user in the system!");
-			else
+			else{
+				if(userRepository.findByName(assignedTo.getName()).get().getRole().getRole().equals("ADMIN"))
+					throw new InvalidRoleException("ADMIN cannot be assigned with a task!");
 				task.setAssignedTo(userRepository.findByName(assignedTo.getName()).get());
+			}
 		}
 		else
 			task.setAssignedTo(fromDatabase.getAssignedTo());
@@ -145,9 +153,10 @@ public class TaskService {
 		
 		case "BUSINESS":
 			result = taskRepository.findAll();
-			
+			break;
 		case "INDIVIDUAL":
 			result = taskRepository.findByAssignedToId(user.getId());
+			break;
 		}
 		
 		Collections.sort(result, new TaskComparator());

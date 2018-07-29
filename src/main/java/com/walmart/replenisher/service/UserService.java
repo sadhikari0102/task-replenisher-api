@@ -37,30 +37,42 @@ public class UserService {
 	public User createUser(User user) {
 		log.info("Creating user");
 		Role role = user.getRole();
+		
 		if(role != null)
 			utilities.validateRole(role);
+		
 		try {
 
 			return userRepository.save(user);
 	
 		}
+		
 		catch(DataIntegrityViolationException ce) {
 			throw new DuplicateCreationException("User with username " + user.getName() +" already exists");
 		}
+		
 		catch(ConstraintViolationException e) {
 			throw new DataConstraintViolationException(utilities.getConstaintsMessage(e));
 		}
+		
 	}
 	
 	public User updateUser(String username, User user) {
+		
+		if(!userRepository.existsByName(username))
+			throw new UsernameNotFoundException("User " + username + " doesn't exist");
+			
 		User fromDatabase = userRepository.findByName(username).get();
 		user.setId(fromDatabase.getId());
+		
 		if(user.getName() == null)
 			user.setName(fromDatabase.getName());
+		
 		if(user.getRole() == null)
 			user.setRole(fromDatabase.getRole());
 		else
 			utilities.validateRole(user.getRole());
+		
 		if(user.getPassword() == null)
 			user.setPassword(fromDatabase.getPassword());
 		
@@ -71,9 +83,10 @@ public class UserService {
 	
 	public User getUser(String username) {
 		
+		if(!userRepository.existsByName(username))
+			throw new UsernameNotFoundException("User " + username + " doesn't exist");
+		
 		User user = userRepository.findByName(username).get();
-		if(user == null)
-			throw new UsernameNotFoundException("User with " + username + " doesn't exist");
 		return user;
 		
 	}
