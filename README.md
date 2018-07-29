@@ -135,9 +135,7 @@ Below are the possible requests which can be made :
 	Note	:	auth credentials will be same as the ones created in request 1
 
 4. 
-	Usage	:	Get tasks in the database. This can either be used by BUSINESS or INDIVIDUAL user, which are identified based on their respective credentials in the basic-authorization.
-	
-			BUSINESS USERS can access all the tasks in the system, while INDIVIDUAL users can only see the tasks assigned to them.
+	Usage	:	Get tasks in the database. This can either be used by BUSINESS or INDIVIDUAL user, which are identified based on their respective credentials in the basic-authorization. BUSINESS USERS can access all the tasks in the system, while INDIVIDUAL users can only see the tasks assigned to them.
 	
 	Request Type	:	GET
 	
@@ -156,9 +154,7 @@ Below are the possible requests which can be made :
 	Note	:	Auth credentials of any BUSINESS or INDIVIDUAL user
 
 5. 
-	Usage	:	Create task in the database and assign it to an existing user (BUSINESS OR INDIVIDUAL).
-	
-			BUSINESS user can assign it to any system user, while INDIVIDUAL can only assign it to themselves.
+	Usage	:	Create task in the database and assign it to an existing user (BUSINESS OR INDIVIDUAL). BUSINESS user can assign it to any system user, while INDIVIDUAL can only assign it to themselves.
 	
 	Request Type	:	POST
 	
@@ -173,13 +169,11 @@ Below are the possible requests which can be made :
 		        }
 		}
 	
-	Value constraints	:	Status can be either CREATED/ASSIGNED/STARTED/FINISHED.
-	
-					If the status is left empty, it is automatically saved as CREATED or ASSIGNED based on whether assignedTo is empty or not.
+	Value constraints	:	Status can be either CREATED/ASSIGNED/STARTED/FINISHED. If the status is left empty, it is automatically saved as CREATED or ASSIGNED based on whether assignedTo is empty or not.
 					
-					Priority is mandatory and can range between 1 and 10.
+	Priority is mandatory and can range between 1 and 10.
 					
-					Description is mandatory
+	Description is mandatory
 	
 	Authentication	:	Basic Auth
 	
@@ -190,11 +184,7 @@ Below are the possible requests which can be made :
 	Note	:	Auth credentials of any BUSINESS or INDIVIDUAL user
 
 6. 
-	Usage	:	Update task using specific task id in the url.
-	
-			Only the updated parameter needs to be supplied in the request body.
-			
-			If the status of the task changes, STARTTIME and ENDTIME are updated accordingly.
+	Usage	:	Update task using specific task id in the url. Only the updated parameter needs to be supplied in the request body. If the status of the task changes, STARTTIME and ENDTIME are updated accordingly.
 	
 	Request Type	:	PUT
 	
@@ -205,9 +195,9 @@ Below are the possible requests which can be made :
 	
 	Value constraints	:	Status when changes to STARTED, STARTTIME becomes current time.
 	
-					Status when changes to FINISHED, ENDTIME becomes current time.
+	Status when changes to FINISHED, ENDTIME becomes current time.
 					
-					Status when changes to CREATED/ASSIGNED, STARTTIME and ENDTIME become null.
+	Status when changes to CREATED/ASSIGNED, STARTTIME and ENDTIME become null.
 	
 	Authentication	:	Basic Auth
 	
