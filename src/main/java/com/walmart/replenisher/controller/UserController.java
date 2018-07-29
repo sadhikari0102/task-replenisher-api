@@ -32,8 +32,8 @@ public class UserController {
 	
 	@PreAuthorize("hasAnyRole('ADMIN')")
 	@RequestMapping(method = RequestMethod.PUT, value = "/users/{username}")
-	public User updateUser(@RequestBody User user) {
-		return userService.createUser(user);
+	public User updateUser(@RequestBody User user, @PathVariable("username") String username) {
+		return userService.updateUser(username, user);
 	}
 	
 	@PreAuthorize("hasAnyRole('ADMIN')")

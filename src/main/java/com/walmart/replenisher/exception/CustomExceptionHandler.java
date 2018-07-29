@@ -34,7 +34,6 @@ public class CustomExceptionHandler extends ResponseEntityExceptionHandler {
 		return new ResponseEntity<>(errorDetails, HttpStatus.NOT_ACCEPTABLE);
 	}
 	
-	
 	@ExceptionHandler(UserNotFoundException.class) 
 	public final ResponseEntity<ErrorDetails> handleUserNotFoundException(UserNotFoundException e, WebRequest request) {
 		ErrorDetails errorDetails = new ErrorDetails(new Date(), e.getMessage(), request.getDescription(true));
@@ -46,4 +45,23 @@ public class CustomExceptionHandler extends ResponseEntityExceptionHandler {
 		ErrorDetails errorDetails = new ErrorDetails(new Date(), e.getMessage(), request.getDescription(true));
 		return new ResponseEntity<>(errorDetails, HttpStatus.NOT_ACCEPTABLE);
 	}
+	
+	@ExceptionHandler(DataConstraintViolationException.class) 
+	public final ResponseEntity<ErrorDetails> handleDataConstraintViolationException(DataConstraintViolationException e, WebRequest request) {
+		ErrorDetails errorDetails = new ErrorDetails(new Date(), e.getMessage(), request.getDescription(true));
+		return new ResponseEntity<>(errorDetails, HttpStatus.NOT_ACCEPTABLE);
+	}
+
+	@ExceptionHandler(InvalidStatusException.class) 
+	public final ResponseEntity<ErrorDetails> handleInvalidStatusException(InvalidStatusException e, WebRequest request) {
+		ErrorDetails errorDetails = new ErrorDetails(new Date(), e.getMessage(), request.getDescription(true));
+		return new ResponseEntity<>(errorDetails, HttpStatus.NOT_ACCEPTABLE);
+	}
+	
+	@ExceptionHandler(GenericDataException.class) 
+	public final ResponseEntity<ErrorDetails> handleGenericDataException(GenericDataException e, WebRequest request) {
+		ErrorDetails errorDetails = new ErrorDetails(new Date(), e.getMessage(), request.getDescription(true));
+		return new ResponseEntity<>(errorDetails, HttpStatus.NOT_ACCEPTABLE);
+	}
+	
 }

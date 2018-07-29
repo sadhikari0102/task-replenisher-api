@@ -2,7 +2,8 @@ package com.walmart.replenisher.service;
 
 import java.util.List;
 
-import org.apache.coyote.http11.filters.VoidInputFilter;
+import javax.validation.ConstraintViolationException;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,12 +13,12 @@ import org.springframework.stereotype.Service;
 
 import com.walmart.replenisher.entity.Role;
 import com.walmart.replenisher.entity.User;
+import com.walmart.replenisher.exception.DataConstraintViolationException;
 import com.walmart.replenisher.exception.DuplicateCreationException;
-import com.walmart.replenisher.exception.InvalidRoleException;
 import com.walmart.replenisher.exception.UserNotAnAdminException;
 import com.walmart.replenisher.exception.UserNotFoundException;
-import com.walmart.replenisher.repository.RoleRepository;
 import com.walmart.replenisher.repository.UserRepository;
+import com.walmart.replenisher.utils.ApplicationUtilities;
 
 @Service
 public class UserService {
@@ -27,7 +28,7 @@ public class UserService {
 	@Autowired
 	private UserRepository userRepository;
 	@Autowired
-	private RoleRepository roleRepository;
+	private ApplicationUtilities utilities;
 	
 	public List<User> getAllUsers() {
 		return userRepository.findAll();
@@ -35,16 +36,37 @@ public class UserService {
 
 	public User createUser(User user) {
 		log.info("Creating user");
+		Role role = user.getRole();
+		if(role != null)
+			utilities.validateRole(role);
 		try {
-			String role = user.getRole().getRole();
-			if(!roleRepository.existsById(role))
-				throw new InvalidRoleException("Role " + role + " doesn't exist!");
+
 			return userRepository.save(user);
 	
 		}
 		catch(DataIntegrityViolationException ce) {
 			throw new DuplicateCreationException("User with username " + user.getName() +" already exists");
 		}
+		catch(ConstraintViolationException e) {
+			throw new DataConstraintViolationException(utilities.getConstaintsMessage(e));
+		}
+	}
+	
+	public User updateUser(String username, User user) {
+		User fromDatabase = userRepository.findByName(username).get();
+		user.setId(fromDatabase.getId());
+		if(user.getName() == null)
+			user.setName(fromDatabase.getName());
+		if(user.getRole() == null)
+			user.setRole(fromDatabase.getRole());
+		else
+			utilities.validateRole(user.getRole());
+		if(user.getPassword() == null)
+			user.setPassword(fromDatabase.getPassword());
+		
+		return userRepository.
+				save(user);
+		
 	}
 	
 	public User getUser(String username) {

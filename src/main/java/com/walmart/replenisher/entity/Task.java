@@ -25,7 +25,6 @@ public class Task {
 	@Column(name = "DESCRIPTION")
 	private String description;
 	
-	@NotNull
 	@Column(name = "STATUS")
 	private String status;
 	
@@ -58,12 +57,12 @@ public class Task {
 		this.taskId = taskId;
 	}
 
-	public User getAssignedUser() {
+	public User getAssignedTo() {
 		return assignedTo;
 	}
 
 
-	public void setAssignedUser(User assignedUser) {
+	public void setAssignedTo(User assignedUser) {
 		this.assignedTo = assignedUser;
 	}
 
@@ -107,11 +106,11 @@ public class Task {
 		this.endTime = endTime;
 	}	
 	
-	public User getCreatorUser() {
+	public User getCreatedBy() {
 		return createdBy;
 	}
 
-	public void setCreatorUser(User creatorUser) {
+	public void setCreatedBy(User creatorUser) {
 		this.createdBy = creatorUser;
 	}
 	
