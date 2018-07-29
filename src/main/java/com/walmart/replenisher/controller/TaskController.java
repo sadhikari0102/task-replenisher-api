@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
@@ -17,6 +18,7 @@ import com.walmart.replenisher.entity.Task;
 import com.walmart.replenisher.service.TaskService;
 import com.walmart.replenisher.utils.ApplicationUtilities;
 
+@CrossOrigin
 @RequestMapping("/authorized")
 @RestController
 public class TaskController {

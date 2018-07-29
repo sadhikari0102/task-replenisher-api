@@ -2256,3 +2256,250 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018-07-29 02:14:57,789 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(2)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
 2018-07-29 02:14:57,790 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown initiated...
 2018-07-29 02:14:57,795 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2018-07-29 15:35:26,318 INFO org.springframework.boot.StartupInfoLogger [main] Starting TaskReplenisher on powerhouse with PID 3143 (/home/adhikari/Desktop/task-replenisher-api/target/classes started by adhikari in /home/adhikari/Desktop/task-replenisher-api)
+2018-07-29 15:35:26,340 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2018-07-29 15:35:26,393 INFO org.springframework.context.support.AbstractApplicationContext [main] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3c130745: startup date [Sun Jul 29 15:35:26 EDT 2018]; root of context hierarchy
+2018-07-29 15:35:27,067 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bf78f5b2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-29 15:35:27,092 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$5826bdec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-29 15:35:27,097 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-29 15:35:27,099 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@315df4bb' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-29 15:35:27,103 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$7cfb609e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-29 15:35:27,109 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-29 15:35:27,255 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2018-07-29 15:35:27,267 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-29 15:35:27,273 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2018-07-29 15:35:27,273 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-29 15:35:27,276 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2018-07-29 15:35:27,329 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2018-07-29 15:35:27,330 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 937 ms
+2018-07-29 15:35:27,417 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-29 15:35:27,418 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-29 15:35:27,418 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-29 15:35:27,418 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-29 15:35:27,419 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-07-29 15:35:27,419 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet dispatcherServlet mapped to [/]
+2018-07-29 15:35:27,513 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2018-07-29 15:35:27,891 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2018-07-29 15:35:27,914 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-07-29 15:35:27,922 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-07-29 15:35:27,958 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.2.17.Final}
+2018-07-29 15:35:27,959 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2018-07-29 15:35:28,030 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-07-29 15:35:28,107 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-07-29 15:35:28,510 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-07-29 15:35:29,009 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6221b13b, org.springframework.security.web.context.SecurityContextPersistenceFilter@35e98af, org.springframework.security.web.header.HeaderWriterFilter@5c48b72c, org.springframework.security.web.authentication.logout.LogoutFilter@632b305d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@f723cdb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7fbf26fc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58278366, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62c3f556, org.springframework.security.web.session.SessionManagementFilter@243bf087, org.springframework.security.web.access.ExceptionTranslationFilter@20cdb152, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@34c53688]
+2018-07-29 15:35:29,061 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-29 15:35:29,174 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3c130745: startup date [Sun Jul 29 15:35:26 EDT 2018]; root of context hierarchy
+2018-07-29 15:35:29,198 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-07-29 15:35:29,215 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/admin],methods=[POST]}" onto public com.walmart.replenisher.entity.User com.walmart.replenisher.controller.AdminController.createAdmin(com.walmart.replenisher.entity.User)
+2018-07-29 15:35:29,217 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/authorized/tasks],methods=[POST]}" onto public com.walmart.replenisher.entity.Task com.walmart.replenisher.controller.TaskController.createTask(java.lang.String,com.walmart.replenisher.entity.Task)
+2018-07-29 15:35:29,217 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/authorized/tasks/{taskId}],methods=[PUT]}" onto public com.walmart.replenisher.entity.Task com.walmart.replenisher.controller.TaskController.updateTask(java.lang.String,com.walmart.replenisher.entity.Task,long)
+2018-07-29 15:35:29,217 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/authorized/tasks],methods=[GET]}" onto public java.util.List<com.walmart.replenisher.entity.Task> com.walmart.replenisher.controller.TaskController.getTasks(java.lang.String)
+2018-07-29 15:35:29,219 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/authorized/users],methods=[POST]}" onto public com.walmart.replenisher.entity.User com.walmart.replenisher.controller.UserController.createUser(com.walmart.replenisher.entity.User)
+2018-07-29 15:35:29,219 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/authorized/users/{username}],methods=[PUT]}" onto public com.walmart.replenisher.entity.User com.walmart.replenisher.controller.UserController.updateUser(com.walmart.replenisher.entity.User,java.lang.String)
+2018-07-29 15:35:29,219 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/authorized/users],methods=[GET]}" onto public java.util.List<com.walmart.replenisher.entity.User> com.walmart.replenisher.controller.UserController.getAllUsers()
+2018-07-29 15:35:29,219 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/authorized/users/{username}],methods=[GET]}" onto public com.walmart.replenisher.entity.User com.walmart.replenisher.controller.UserController.getUser(java.lang.String)
+2018-07-29 15:35:29,222 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-29 15:35:29,222 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-29 15:35:29,256 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-29 15:35:29,256 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-29 15:35:29,269 INFO org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [main] Detected @ExceptionHandler methods in customExceptionHandler
+2018-07-29 15:35:29,422 INFO org.springframework.jmx.export.MBeanExporter [main] Registering beans for JMX exposure on startup
+2018-07-29 15:35:29,424 INFO org.springframework.jmx.export.MBeanExporter [main] Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-29 15:35:29,429 INFO org.springframework.jmx.export.MBeanExporter [main] Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-07-29 15:35:29,437 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2018-07-29 15:35:29,534 INFO org.apache.juli.logging.DirectJDKLog [main] Using a shared selector for servlet write/read
+2018-07-29 15:35:29,549 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2018-07-29 15:35:29,553 INFO org.springframework.boot.StartupInfoLogger [main] Started TaskReplenisher in 3.501 seconds (JVM running for 4.026)
+2018-07-29 15:37:43,452 INFO org.springframework.boot.StartupInfoLogger [main] Starting TaskReplenisher on powerhouse with PID 3553 (/home/adhikari/Desktop/task-replenisher-api/target/classes started by adhikari in /home/adhikari/Desktop/task-replenisher-api)
+2018-07-29 15:37:43,455 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2018-07-29 15:37:43,482 INFO org.springframework.context.support.AbstractApplicationContext [main] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@69b2283a: startup date [Sun Jul 29 15:37:43 EDT 2018]; root of context hierarchy
+2018-07-29 15:37:44,240 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d8d98785] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-29 15:37:44,269 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$71874fbf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-29 15:37:44,274 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-29 15:37:44,276 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3f3c966c' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-29 15:37:44,283 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$965bf271] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-29 15:37:44,289 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-29 15:37:44,458 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2018-07-29 15:37:44,468 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-29 15:37:44,474 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2018-07-29 15:37:44,474 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-29 15:37:44,478 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2018-07-29 15:37:44,523 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2018-07-29 15:37:44,524 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 1042 ms
+2018-07-29 15:37:44,613 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-29 15:37:44,613 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-29 15:37:44,613 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-29 15:37:44,614 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-29 15:37:44,614 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-07-29 15:37:44,614 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet dispatcherServlet mapped to [/]
+2018-07-29 15:37:44,721 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2018-07-29 15:37:45,066 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2018-07-29 15:37:45,088 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-07-29 15:37:45,095 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-07-29 15:37:45,128 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.2.17.Final}
+2018-07-29 15:37:45,129 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2018-07-29 15:37:45,147 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-07-29 15:37:45,213 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-07-29 15:37:45,561 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-07-29 15:37:46,085 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@445bce9a, org.springframework.security.web.context.SecurityContextPersistenceFilter@7fd4e815, org.springframework.security.web.header.HeaderWriterFilter@67f9cb52, org.springframework.security.web.authentication.logout.LogoutFilter@4fecf308, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@38883a31, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20cdb152, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@457a5b2d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7db40fd5, org.springframework.security.web.session.SessionManagementFilter@13866329, org.springframework.security.web.access.ExceptionTranslationFilter@6c3f1658, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@66d25ba9]
+2018-07-29 15:37:46,143 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-29 15:37:46,277 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@69b2283a: startup date [Sun Jul 29 15:37:43 EDT 2018]; root of context hierarchy
+2018-07-29 15:37:46,301 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-07-29 15:37:46,321 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/admin],methods=[POST]}" onto public com.walmart.replenisher.entity.User com.walmart.replenisher.controller.AdminController.createAdmin(com.walmart.replenisher.entity.User)
+2018-07-29 15:37:46,322 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/authorized/tasks],methods=[POST]}" onto public com.walmart.replenisher.entity.Task com.walmart.replenisher.controller.TaskController.createTask(java.lang.String,com.walmart.replenisher.entity.Task)
+2018-07-29 15:37:46,323 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/authorized/tasks/{taskId}],methods=[PUT]}" onto public com.walmart.replenisher.entity.Task com.walmart.replenisher.controller.TaskController.updateTask(java.lang.String,com.walmart.replenisher.entity.Task,long)
+2018-07-29 15:37:46,324 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/authorized/tasks],methods=[GET]}" onto public java.util.List<com.walmart.replenisher.entity.Task> com.walmart.replenisher.controller.TaskController.getTasks(java.lang.String)
+2018-07-29 15:37:46,325 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/authorized/users],methods=[POST]}" onto public com.walmart.replenisher.entity.User com.walmart.replenisher.controller.UserController.createUser(com.walmart.replenisher.entity.User)
+2018-07-29 15:37:46,327 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/authorized/users/{username}],methods=[PUT]}" onto public com.walmart.replenisher.entity.User com.walmart.replenisher.controller.UserController.updateUser(com.walmart.replenisher.entity.User,java.lang.String)
+2018-07-29 15:37:46,327 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/authorized/users],methods=[GET]}" onto public java.util.List<com.walmart.replenisher.entity.User> com.walmart.replenisher.controller.UserController.getAllUsers()
+2018-07-29 15:37:46,328 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/authorized/users/{username}],methods=[GET]}" onto public com.walmart.replenisher.entity.User com.walmart.replenisher.controller.UserController.getUser(java.lang.String)
+2018-07-29 15:37:46,332 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-29 15:37:46,332 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-29 15:37:46,358 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-29 15:37:46,358 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-29 15:37:46,370 INFO org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [main] Detected @ExceptionHandler methods in customExceptionHandler
+2018-07-29 15:37:46,532 INFO org.springframework.jmx.export.MBeanExporter [main] Registering beans for JMX exposure on startup
+2018-07-29 15:37:46,534 INFO org.springframework.jmx.export.MBeanExporter [main] Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-29 15:37:46,537 INFO org.springframework.jmx.export.MBeanExporter [main] Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-07-29 15:37:46,546 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2018-07-29 15:37:46,548 ERROR org.apache.juli.logging.DirectJDKLog [main] Failed to start connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.walmart.replenisher.TaskReplenisher.main(TaskReplenisher.java:10)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+2018-07-29 15:37:46,550 INFO org.apache.juli.logging.DirectJDKLog [main] Pausing ProtocolHandler ["http-nio-8080"]
+2018-07-29 15:37:46,551 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
+2018-07-29 15:37:46,568 INFO org.apache.juli.logging.DirectJDKLog [main] The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2018-07-29 15:37:46,569 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping ProtocolHandler ["http-nio-8080"]
+2018-07-29 15:37:46,569 INFO org.apache.juli.logging.DirectJDKLog [main] Destroying ProtocolHandler ["http-nio-8080"]
+2018-07-29 15:37:46,571 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-07-29 15:37:46,573 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2018-07-29 15:37:46,574 INFO org.springframework.context.support.AbstractApplicationContext [main] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@69b2283a: startup date [Sun Jul 29 15:37:43 EDT 2018]; root of context hierarchy
+2018-07-29 15:37:46,575 INFO org.springframework.jmx.export.MBeanExporter [main] Unregistering JMX-exposed beans on shutdown
+2018-07-29 15:37:46,575 INFO org.springframework.jmx.support.MBeanRegistrationSupport [main] Unregistering JMX-exposed beans
+2018-07-29 15:37:46,576 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-07-29 15:37:46,577 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2018-07-29 15:37:46,580 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2018-07-29 15:37:51,378 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(2)-127.0.0.1] Application shutdown requested.
+2018-07-29 15:37:51,378 INFO org.springframework.context.support.AbstractApplicationContext [RMI TCP Connection(2)-127.0.0.1] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3c130745: startup date [Sun Jul 29 15:35:26 EDT 2018]; root of context hierarchy
+2018-07-29 15:37:51,384 INFO org.springframework.jmx.export.MBeanExporter [RMI TCP Connection(2)-127.0.0.1] Unregistering JMX-exposed beans on shutdown
+2018-07-29 15:37:51,385 INFO org.springframework.jmx.support.MBeanRegistrationSupport [RMI TCP Connection(2)-127.0.0.1] Unregistering JMX-exposed beans
+2018-07-29 15:37:51,386 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(2)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-07-29 15:37:51,387 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2018-07-29 15:37:51,390 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2018-07-29 15:37:53,619 INFO org.springframework.boot.StartupInfoLogger [main] Starting TaskReplenisher on powerhouse with PID 3626 (/home/adhikari/Desktop/task-replenisher-api/target/classes started by adhikari in /home/adhikari/Desktop/task-replenisher-api)
+2018-07-29 15:37:53,622 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2018-07-29 15:37:53,651 INFO org.springframework.context.support.AbstractApplicationContext [main] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b5d6a01: startup date [Sun Jul 29 15:37:53 EDT 2018]; root of context hierarchy
+2018-07-29 15:37:54,430 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$13135af4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-29 15:37:54,455 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$abc1232e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-29 15:37:54,460 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-29 15:37:54,462 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7e8e8651' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-29 15:37:54,466 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$d095c5e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-29 15:37:54,472 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-29 15:37:54,617 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2018-07-29 15:37:54,626 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-29 15:37:54,632 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2018-07-29 15:37:54,632 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-29 15:37:54,635 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2018-07-29 15:37:54,679 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2018-07-29 15:37:54,679 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 1028 ms
+2018-07-29 15:37:54,769 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-29 15:37:54,769 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-29 15:37:54,769 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-29 15:37:54,769 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-29 15:37:54,770 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-07-29 15:37:54,770 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet dispatcherServlet mapped to [/]
+2018-07-29 15:37:54,874 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2018-07-29 15:37:55,234 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2018-07-29 15:37:55,255 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-07-29 15:37:55,263 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-07-29 15:37:55,306 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.2.17.Final}
+2018-07-29 15:37:55,307 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2018-07-29 15:37:55,327 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-07-29 15:37:55,405 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-07-29 15:37:55,781 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-07-29 15:37:56,298 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@118acf70, org.springframework.security.web.context.SecurityContextPersistenceFilter@457a5b2d, org.springframework.security.web.header.HeaderWriterFilter@2eda2062, org.springframework.security.web.authentication.logout.LogoutFilter@67688110, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@34c53688, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@372461a9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@11c78080, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@72557746, org.springframework.security.web.session.SessionManagementFilter@62d40e31, org.springframework.security.web.access.ExceptionTranslationFilter@1625789b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2dba05b1]
+2018-07-29 15:37:56,354 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-29 15:37:56,480 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b5d6a01: startup date [Sun Jul 29 15:37:53 EDT 2018]; root of context hierarchy
+2018-07-29 15:37:56,502 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-07-29 15:37:56,519 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/admin],methods=[POST]}" onto public com.walmart.replenisher.entity.User com.walmart.replenisher.controller.AdminController.createAdmin(com.walmart.replenisher.entity.User)
+2018-07-29 15:37:56,521 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/authorized/tasks],methods=[POST]}" onto public com.walmart.replenisher.entity.Task com.walmart.replenisher.controller.TaskController.createTask(java.lang.String,com.walmart.replenisher.entity.Task)
+2018-07-29 15:37:56,522 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/authorized/tasks/{taskId}],methods=[PUT]}" onto public com.walmart.replenisher.entity.Task com.walmart.replenisher.controller.TaskController.updateTask(java.lang.String,com.walmart.replenisher.entity.Task,long)
+2018-07-29 15:37:56,522 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/authorized/tasks],methods=[GET]}" onto public java.util.List<com.walmart.replenisher.entity.Task> com.walmart.replenisher.controller.TaskController.getTasks(java.lang.String)
+2018-07-29 15:37:56,523 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/authorized/users],methods=[POST]}" onto public com.walmart.replenisher.entity.User com.walmart.replenisher.controller.UserController.createUser(com.walmart.replenisher.entity.User)
+2018-07-29 15:37:56,523 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/authorized/users/{username}],methods=[PUT]}" onto public com.walmart.replenisher.entity.User com.walmart.replenisher.controller.UserController.updateUser(com.walmart.replenisher.entity.User,java.lang.String)
+2018-07-29 15:37:56,524 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/authorized/users],methods=[GET]}" onto public java.util.List<com.walmart.replenisher.entity.User> com.walmart.replenisher.controller.UserController.getAllUsers()
+2018-07-29 15:37:56,524 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/authorized/users/{username}],methods=[GET]}" onto public com.walmart.replenisher.entity.User com.walmart.replenisher.controller.UserController.getUser(java.lang.String)
+2018-07-29 15:37:56,527 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-29 15:37:56,527 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-29 15:37:56,549 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-29 15:37:56,549 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-29 15:37:56,560 INFO org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [main] Detected @ExceptionHandler methods in customExceptionHandler
+2018-07-29 15:37:56,707 INFO org.springframework.jmx.export.MBeanExporter [main] Registering beans for JMX exposure on startup
+2018-07-29 15:37:56,708 INFO org.springframework.jmx.export.MBeanExporter [main] Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-29 15:37:56,712 INFO org.springframework.jmx.export.MBeanExporter [main] Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-07-29 15:37:56,719 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2018-07-29 15:37:56,722 INFO org.apache.juli.logging.DirectJDKLog [main] Using a shared selector for servlet write/read
+2018-07-29 15:37:56,729 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2018-07-29 15:37:56,731 INFO org.springframework.boot.StartupInfoLogger [main] Started TaskReplenisher in 3.373 seconds (JVM running for 3.722)
+2018-07-29 15:39:14,000 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-29 15:39:14,000 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-29 15:39:14,010 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2018-07-29 15:39:14,020 INFO com.walmart.replenisher.service.DetailsService [http-nio-8080-exec-2] Username entered : admin
+2018-07-29 15:39:14,036 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-8080-exec-2] HHH000397: Using ASTQueryTranslatorFactory
+2018-07-29 15:39:14,131 INFO com.walmart.replenisher.service.DetailsService [http-nio-8080-exec-2] admin pass
+2018-07-29 15:39:18,961 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(2)-127.0.0.1] Application shutdown requested.
+2018-07-29 15:39:18,962 INFO org.springframework.context.support.AbstractApplicationContext [RMI TCP Connection(2)-127.0.0.1] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b5d6a01: startup date [Sun Jul 29 15:37:53 EDT 2018]; root of context hierarchy
+2018-07-29 15:39:18,964 INFO org.springframework.jmx.export.MBeanExporter [RMI TCP Connection(2)-127.0.0.1] Unregistering JMX-exposed beans on shutdown
+2018-07-29 15:39:18,965 INFO org.springframework.jmx.support.MBeanRegistrationSupport [RMI TCP Connection(2)-127.0.0.1] Unregistering JMX-exposed beans
+2018-07-29 15:39:18,966 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(2)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-07-29 15:39:18,967 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2018-07-29 15:39:18,970 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown completed.
