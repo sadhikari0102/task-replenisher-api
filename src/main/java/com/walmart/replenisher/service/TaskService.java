@@ -1,8 +1,6 @@
 package com.walmart.replenisher.service;
 
-import java.util.Collection;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 import javax.validation.ConstraintViolationException;
@@ -114,8 +112,11 @@ public class TaskService {
 		Task fromDatabase = taskRepository.getOne(task.getTaskId());
 		if(task.getTaskId() > 0) {
 			
-			if(fromDatabase.getStatus().equals(task.getStatus()))
+			if(fromDatabase.getStatus().equals(task.getStatus())) {
+				task.setStartTime(fromDatabase.getStartTime());
+				task.setEndTime(fromDatabase.getEndTime());
 				return;
+			}
 			else
 				task.setStartTime(fromDatabase.getStartTime());
 		}
