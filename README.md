@@ -72,6 +72,7 @@ Below are the functionalities that can be achieved with the given api:
 8. The recurring task functinality using task template is left for future development due to time constraint.
 
 Below are the possible requests which can be made :
+
 1. 
 	Usage	:	Create admin user, who in turn is responsible for creating any system user.
 	
