@@ -1,6 +1,6 @@
 It is the backend of the Walmart Task Replenisher Application which can be deployed on any cloud platform and function as an independent api.
 
-Currently, the backend itself is deployed at url : http://18.218.226.1:8080/
+Currently, the backend itself is deployed at url : http://18.216.252.106:8080/
 
 Below are the specifications which needs to be taken care of before the api functionalities are utilized:
 
